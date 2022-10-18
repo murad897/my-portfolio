@@ -1,10 +1,8 @@
-import React from 'react'
-import styles from "./Contact.module.css"
+import React from "react";
+import styles from "./Contact.module.css";
 
 const index = () => {
-  return (
-    <div>index</div>
-  )
-}
+  return <section id="contact">index</section>;
+};
 
-export default index
+export default index;

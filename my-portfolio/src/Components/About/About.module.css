@@ -1,0 +1,89 @@
+.aboutSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.aboutContainer {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.aboutCards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.aboutCard {
+  background: var(--color-bg-variant);
+  border: 1px solid transparent;
+  border-radius: 1rem;
+  padding: 2rem;
+  text-align: center;
+  cursor: pointer;
+}
+
+.aboutCard:hover {
+  background: transparent;
+  border-color: var(--color-primary-variant);
+}
+
+.about {
+  color: var(--color-primary);
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+
+.aboutCard h5 {
+  font-size: 0.95rem;
+}
+
+.aboutCard small {
+  white-space: nowrap;
+  font-size: 0.7rem;
+  color: var(--color-light);
+}
+
+.aboutContent p {
+  margin: 2rem 0 2.6rem;
+  color: var(--color-light);
+}
+
+.aboutContent {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  flex: 1;
+}
+
+.aboutMe {
+  margin-bottom: 80px;
+}
+
+.getToKnow {
+  color: #b2b2b2;
+}
+
+.aboutIcon {
+  transform: scale(1.5);
+}
+
+@media screen and (max-width: 700px) {
+  .aboutContainer {
+    flex-direction: column;
+  }
+  .aboutMeImage {
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 30px;
+  }
+  .aboutCards {
+    grid-template-columns: 1fr;
+  }
+  .aboutMe {
+    margin-bottom: 0px;
+  }
+}

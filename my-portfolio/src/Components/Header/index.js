@@ -5,7 +5,7 @@ import reactImg from "../../Assets/react2.png";
 import styles from "./Header.module.css";
 import Typewriter from "typewriter-effect";
 
-const index = () => {
+const Header = () => {
   return (
     <header className={styles.header}>
       <div
@@ -28,7 +28,7 @@ const index = () => {
         <div className={styles.headerImg}>
           <img src={reactImg} alt="" />
         </div>
-        <a href="#contact" className={styles.scrollDown}>
+        <a href="#about" className={styles.scrollDown}>
           Scroll Down
         </a>
       </div>
@@ -36,4 +36,4 @@ const index = () => {
   );
 };
 
-export default index;
+export default Header;

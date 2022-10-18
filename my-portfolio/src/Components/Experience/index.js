@@ -3,7 +3,7 @@ import styles from "./Experience.module.css"
 
 const index = () => {
   return (
-    <div>index</div>
+    <section id='experience'>index</section>
   )
 }
 
