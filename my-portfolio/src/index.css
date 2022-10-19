@@ -242,3 +242,14 @@ a:hover {
   color: var(--color-white);
   cursor: pointer;
 }
+
+.progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 10px;
+  z-index: 4324;
+  background: var(--color-primary);
+  transform-origin: 0%;
+}

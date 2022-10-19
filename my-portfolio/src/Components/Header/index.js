@@ -7,7 +7,7 @@ import Typewriter from "typewriter-effect";
 
 const Header = () => {
   return (
-    <header className={styles.header}>
+    <header id="header" className={styles.header}>
       <div
         className="container"
         style={{ height: "100%", position: "relative" }}

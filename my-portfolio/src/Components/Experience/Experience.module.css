@@ -1,0 +1,16 @@
+.mySkill {
+  text-align: center;
+  color: #b2b2b2;
+}
+
+.mySkillP {
+  text-align: center;
+  color: var(--color-primary);
+}
+
+.experience {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}

@@ -8,10 +8,17 @@ import Portfolio from "../Portfolio";
 import Testimonials from "../Testimonials";
 import Contact from "../Contact";
 import Footer from "../Footer";
+import { motion, useScroll } from "framer-motion";
 
-const index = () => {
+const App = () => {
+  const { scrollYProgress } = useScroll();
+
   return (
     <div>
+      <motion.div
+        className="progress-bar"
+        style={{ scaleX: scrollYProgress }}
+      />
       <Header />
       <Nav />
       <About />
@@ -25,4 +32,4 @@ const index = () => {
   );
 };
 
-export default index;
+export default App;

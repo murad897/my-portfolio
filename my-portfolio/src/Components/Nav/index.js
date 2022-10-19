@@ -4,48 +4,26 @@ import { BiBook } from "react-icons/bi";
 import { RiServiceLine } from "react-icons/ri";
 import { BiMessageSquareDetail } from "react-icons/bi";
 import styles from "./Nav.module.css";
-import { useState } from "react";
+import { Link } from "react-scroll";
 
 const Nav = () => {
-  const [activeNav, setActiveNav] = useState("#");
-
   return (
     <nav>
-      <a
-        href="#"
-        onClick={() => setActiveNav("#")}
-        className={activeNav === "#" ? styles.active : ""}
-      >
+      <Link activeClass={styles.active} spy to="header">
         <AiOutlineHome />
-      </a>
-      <a
-        href="#about"
-        onClick={() => setActiveNav("#about")}
-        className={activeNav === "#about" ? styles.active : ""}
-      >
+      </Link>
+      <Link activeClass={styles.active} spy to="about">
         <AiOutlineUser />
-      </a>
-      <a
-        href="#experience"
-        onClick={() => setActiveNav("#experience")}
-        className={activeNav === "#experience" ? styles.active : ""}
-      >
+      </Link>
+      <Link activeClass={styles.active} spy to="experience">
         <BiBook />
-      </a>
-      <a
-        href="#services"
-        onClick={() => setActiveNav("#services")}
-        className={activeNav === "#services" ? styles.active : ""}
-      >
+      </Link>
+      <Link activeClass={styles.active} spy to="services">
         <RiServiceLine />
-      </a>
-      <a
-        href="#contact"
-        onClick={() => setActiveNav("#contact")}
-        className={activeNav === "#contact" ? styles.active : ""}
-      >
+      </Link>
+      <Link activeClass={styles.active} spy to="contact">
         <BiMessageSquareDetail />
-      </a>
+      </Link>
     </nav>
   );
 };

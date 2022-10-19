@@ -4,6 +4,7 @@ import { FaAward } from "react-icons/fa";
 import { FiUsers } from "react-icons/fi";
 import { VscFolderLibrary } from "react-icons/vsc";
 import reactImg from "../../Assets/react2.png";
+import { motion } from "framer-motion";
 
 const About = () => {
   return (
@@ -19,21 +20,42 @@ const About = () => {
           </div>
           <div className={styles.aboutContent}>
             <div className={styles.aboutCards}>
-              <article className={styles.aboutCard}>
-                <FaAward className={styles.aboutIcon} color="var(--color-primary)"/>
+              <motion.article
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.9 }}
+                className={styles.aboutCard}
+              >
+                <FaAward
+                  className={styles.aboutIcon}
+                  color="var(--color-primary)"
+                />
                 <h5>Experience</h5>
                 <small>2 + years experience</small>
-              </article>
-              <article className={styles.aboutCard}>
-                <FiUsers className={styles.aboutIcon} color="var(--color-primary)"/>
+              </motion.article>
+              <motion.article
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.9 }}
+                className={styles.aboutCard}
+              >
+                <FiUsers
+                  className={styles.aboutIcon}
+                  color="var(--color-primary)"
+                />
                 <h5>Clients</h5>
                 <small>20 + clients</small>
-              </article>
-              <article className={styles.aboutCard}>
-                <VscFolderLibrary className={styles.aboutIcon} color="var(--color-primary)"/>
+              </motion.article>
+              <motion.article
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.9 }}
+                className={styles.aboutCard}
+              >
+                <VscFolderLibrary
+                  className={styles.aboutIcon}
+                  color="var(--color-primary)"
+                />
                 <h5>Projects</h5>
                 <small>30 + projects</small>
-              </article>
+              </motion.article>
             </div>
             <p>
               I am Front end developer with 2+ years of hands-on experience
