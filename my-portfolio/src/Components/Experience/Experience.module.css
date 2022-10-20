@@ -14,3 +14,57 @@
   align-items: center;
   justify-content: center;
 }
+
+.experienceContainer {
+  margin-top: 5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+}
+
+.experienceContainer > div {
+  background: var(--color-bg-variant);
+  padding: 2.4rem;
+  border-radius: 2rem;
+  border: 1px solid transparent;
+}
+
+.experienceContainer > div:hover {
+  background: transparent;
+  border-color: var(--color-primary-variant);
+  cursor: pointer;
+}
+
+.experienceContainer > div h3 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: var(--color-primary);
+}
+
+.experienceContent {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 2rem;
+}
+
+small {
+  color: #a8e890;
+}
+
+@media screen and (max-width: 960px) {
+  .experienceContainer {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 630px) {
+  .experienceContainer {
+    grid-template-columns: 1fr;
+  }
+  .experienceContent {
+    grid-template-columns: 1fr 1fr;
+  }
+  small {
+    font-size: 0.8rem;
+  }
+}

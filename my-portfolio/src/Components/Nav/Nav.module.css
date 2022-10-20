@@ -10,6 +10,8 @@ nav a {
 nav {
   background: rgba(0, 0, 0, 0.3);
   width: max-content;
+  position: relative;
+  z-index: 5345345;
   display: block;
   padding: 0.9rem 1.17rem;
   position: fixed;
