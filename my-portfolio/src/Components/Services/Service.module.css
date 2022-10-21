@@ -1,0 +1,50 @@
+.serviceContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.serviceList li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+#flexContainer {
+  display: flex;
+  justify-content: center;
+  text-align: left;
+  gap: 2rem;
+  margin-top: 3rem;
+  width: 100%;
+}
+
+.service ul {
+  margin-top: 1.5rem;
+}
+
+.service ul li {
+  white-space: pre-wrap;
+}
+
+article {
+  flex: 1;
+  cursor: pointer;
+  white-space: nowrap;
+  padding: 20px;
+  border: 1px solid black;
+  border-radius: 10px;
+  border-color: var(--color-primary);
+}
+
+.service:hover {
+  background: transparent;
+  border-color: var(--color-primary-variant);
+}
+
+@media screen and (max-width: 1117px) {
+  #flexContainer {
+    flex-direction: column;
+  }
+}

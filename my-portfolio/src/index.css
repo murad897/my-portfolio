@@ -182,10 +182,16 @@ section {
   height: 100vh;
 }
 
-section > h2,
-section > h5 {
+section > h2 {
+  color: #b2b2b2;
   text-align: center;
   color: var(--color-primary);
+}
+
+section > h5 {
+  color: #b2b2b2;
+  text-align: center;
+  color: #fff;
 }
 
 .text-light {
@@ -253,4 +259,3 @@ a:hover {
   background: var(--color-primary);
   transform-origin: 0%;
 }
-

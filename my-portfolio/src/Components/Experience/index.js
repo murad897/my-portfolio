@@ -11,7 +11,7 @@ const index = () => {
         <h2 className={styles.mySkillP}>My experience</h2>
         <div className={styles.experienceContainer}>
           <motion.div
-            whileHover={{ scale: 1.04 }}
+            whileHover={{ scale: 1.01 }}
             whileTap={{ scale: 0.9 }}
             className="experienceFrontEnd"
           >
@@ -19,12 +19,12 @@ const index = () => {
             <div className={styles.experienceContent}>
               <article className="exprerienceDetails">
                 <BsPatchCheckFill color="var(--color-primary)" />
-                <h4>HTML</h4>
+                <h4>JWT</h4>
                 <small className="profi-text">Experienced</small>
               </article>
               <article className="exprerienceDetails">
                 <BsPatchCheckFill color="var(--color-primary)" />
-                <h4>CSS3</h4>
+                <h4>Vue</h4>
                 <small className="profi-text">Experienced</small>
               </article>
               <article className="exprerienceDetails">
@@ -57,10 +57,30 @@ const index = () => {
                 <h4>Next js</h4>
                 <small className="profi-text">Middle</small>
               </article>
+              <article className="exprerienceDetails">
+                <BsPatchCheckFill color="var(--color-primary)" />
+                <h4>GraphQL</h4>
+                <small className="profi-text">Middle</small>
+              </article>
+              <article className="exprerienceDetails">
+                <BsPatchCheckFill color="var(--color-primary)" />
+                <h4>Tailwind</h4>
+                <small className="profi-text">Middle</small>
+              </article>
+              <article className="exprerienceDetails">
+                <BsPatchCheckFill color="var(--color-primary)" />
+                <h4>Redux Saga</h4>
+                <small className="profi-text">Middle</small>
+              </article>
+              <article className="exprerienceDetails">
+                <BsPatchCheckFill color="var(--color-primary)" />
+                <h4>Websocket</h4>
+                <small className="profi-text">Middle</small>
+              </article>
             </div>
           </motion.div>
           <motion.div
-            whileHover={{ scale: 1.04 }}
+            whileHover={{ scale: 1.01 }}
             whileTap={{ scale: 0.9 }}
             className="experienceBackend"
           >
@@ -68,7 +88,7 @@ const index = () => {
             <div className={styles.experienceContent}>
               <article className="exprerienceDetails">
                 <BsPatchCheckFill color="var(--color-primary)" />
-                <h4>Node js</h4>
+                <h4>Node (express)</h4>
                 <small className="profi-text">Middle</small>
               </article>
               <article className="exprerienceDetails">

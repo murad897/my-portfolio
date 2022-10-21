@@ -1,6 +1,5 @@
 .mySkill {
   text-align: center;
-  color: #b2b2b2;
 }
 
 .mySkillP {
@@ -42,9 +41,9 @@
 }
 
 .experienceContent {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  gap: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
 small {
@@ -61,9 +60,7 @@ small {
   .experienceContainer {
     grid-template-columns: 1fr;
   }
-  .experienceContent {
-    grid-template-columns: 1fr 1fr;
-  }
+
   small {
     font-size: 0.8rem;
   }

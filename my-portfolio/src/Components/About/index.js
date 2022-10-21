@@ -21,7 +21,7 @@ const About = () => {
           <div className={styles.aboutContent}>
             <div className={styles.aboutCards}>
               <motion.article
-                whileHover={{ scale: 1.1 }}
+                whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.9 }}
                 className={styles.aboutCard}
               >
@@ -33,7 +33,7 @@ const About = () => {
                 <small>2 + years experience</small>
               </motion.article>
               <motion.article
-                whileHover={{ scale: 1.1 }}
+                whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.9 }}
                 className={styles.aboutCard}
               >
@@ -45,7 +45,7 @@ const About = () => {
                 <small>20 + clients</small>
               </motion.article>
               <motion.article
-                whileHover={{ scale: 1.1 }}
+                whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.9 }}
                 className={styles.aboutCard}
               >
